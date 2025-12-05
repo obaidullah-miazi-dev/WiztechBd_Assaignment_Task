@@ -7,6 +7,7 @@ import HeroSection from "../components/HeroSection";
 import TrustedBySection from "../components/TrustedBySection";
 import RevenueStreamsSection from "../components/RevenueStreamsSection";
 import TestimonialsSection from "../components/TestimonialsSection";
+import EssentialToolsSection from "../components/EssentialToolsSection";
 
 const Home = () => {
   const [filteredProperties] = useState(properties);
@@ -30,6 +31,7 @@ const Home = () => {
       <TrustedBySection />
       <RevenueStreamsSection />
       <TestimonialsSection />
+      <EssentialToolsSection />
     </div>
   );
 };
