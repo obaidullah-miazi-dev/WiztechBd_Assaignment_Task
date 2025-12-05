@@ -3,7 +3,7 @@ import Marquee from 'react-fast-marquee';
 
 const StatsSection = () => {
   return (
-    <div className="relative backdrop-blur-2xl bg-[#2A0019]/5 rounded-3xl p-8 md:p-12 max-w-7xl mx-auto shadow-2xl border border-white/50">
+    <div className="relative backdrop-blur-2xl bg-[#2A0019]/5 rounded-3xl p-8 md:p-12 max-w-7xl mx-auto shadow-2xl border border-white/50 mb-16">
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-10">
         <h3 className="text-2xl md:text-3xl font-bold text-white">
@@ -58,7 +58,7 @@ const StatsSection = () => {
 
       
 
-      {/* Bottom Marquee - Exact Match */}
+     
       <div className="mt-20 pt-8 border-t border-white/10">
         <div className="bg-linear-to-r from-amber-50 to-yellow-50 rounded-2xl py-5">
           <Marquee speed={70} gradient={false} pauseOnHover>

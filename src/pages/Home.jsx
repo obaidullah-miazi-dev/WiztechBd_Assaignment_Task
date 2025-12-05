@@ -4,6 +4,7 @@ import SidebarFilters from "../components/SidebarFilters";
 import properties from "../data/properties.json";
 import Properties from "../components/Properties";
 import HeroSection from "../components/HeroSection";
+import TrustedBySection from "../components/TrustedBySection";
 
 const Home = () => {
   const [filteredProperties] = useState(properties);
@@ -24,6 +25,7 @@ const Home = () => {
       </div>
 
       <HeroSection />
+      <TrustedBySection />
     </div>
   );
 };
