@@ -12,6 +12,7 @@ const PropertyCard = ({ property }) => {
   } = property;
 
   const [open, setOpen] = useState(false);
+  const [defaultImg,setDefaultImg] = useState(images[0])
 
   return (
     <>
@@ -23,7 +24,7 @@ const PropertyCard = ({ property }) => {
         <img
           src={images[0]}
           alt={title}
-          className="w-full h-56 object-cover"
+          className="w-full h-76 object-cover"
         />
 
         <div className="p-4">
@@ -46,28 +47,40 @@ const PropertyCard = ({ property }) => {
 
       {/* custom MODAL */}
       {open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-          <div className="bg-white rounded-xl max-w-3xl w-full p-5 relative">
-            <button
+        <div className="fixed inset-0 bg-transparent bg-opacity-40 flex justify-center items-center z-50 p-4">
+      <div className="bg-white rounded-3xl shadow-2xl max-w-4xl w-full relative p-6">
+
+        <button
               onClick={() => setOpen(false)}
               className="absolute top-3 right-3 text-lg font-bold"
             >
               ✖
             </button>
 
-            <h2 className="text-xl font-semibold mb-4">{title}</h2>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              {images.map((img, index) => (
-                <img
-                  key={index}
-                  src={img}
-                  className="w-full h-40 object-cover rounded-lg"
-                />
-              ))}
-            </div>
-          </div>
+        <div className="w-full h-96 md:h-112 mb-4">
+          <img
+            src={defaultImg}
+            className="w-full h-full object-cover rounded-2xl shadow-inner"
+          />
         </div>
+
+        <div className="flex gap-3 overflow-x-auto py-2">
+          {images.map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              onClick={() => setDefaultImg(img)}
+              className={`w-28 h-20 object-cover rounded-xl cursor-pointer border-3 ${
+                defaultImg === img
+                  ? "border-[#9d5781]"
+                  : "border-gray-200 hover:border-[#9d5781]"
+              } transition`}
+            />
+          ))}
+        </div>
+
+      </div>
+    </div>
       )}
     </>
   );

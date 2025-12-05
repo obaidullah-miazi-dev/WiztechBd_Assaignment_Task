@@ -14,7 +14,7 @@ const Properties = ({ properties }) => {
         </select>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
         {properties.map((property) => (
           <PropertyCard key={property.id} property={property} />
         ))}
@@ -26,7 +26,7 @@ const Properties = ({ properties }) => {
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
           <button
             key={n}
-            className={`px-4 py-2 rounded-lg ${n === 1 ? "bg-purple-800 text-white" : "border hover:bg-gray-100"}`}
+            className={`px-4 py-2 rounded-lg ${n === 1 ? "bg-[#6C0443] text-white" : "border hover:bg-gray-100"}`}
           >
             {n}
           </button>
