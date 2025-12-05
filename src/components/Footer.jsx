@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-linear-to-b from-[#251621] to-[#42233A] text-white relative overflow-hidden rounded-t-4xl">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-6 py-16 pb-66">
+      <div className="max-w-7xl mx-auto px-6 py-16 md:pb-66 pb-26">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-sm">
           {/* Column 1 - About Us */}
           <div>
@@ -51,7 +51,7 @@ const Footer = () => {
         
             </div>
 
-            <div className="mt-16 pt-8  text-white/80 text-sm">
+            <div className="md:mt-16 pt-8  text-white/80 text-sm">
           © 2025 Havenix. All rights reserved.
         </div>
           </div>

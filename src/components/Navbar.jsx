@@ -68,14 +68,14 @@ const Navbar = () => {
             <li className="cursor-pointer">Contact Us</li>
           </ul>
 
-          <div className="flex items-center gap-2 mt-4">
+          <div className="flex items-center gap-2 mt-4 mb-4">
             <AiOutlineHeart className="w-5 h-5 text-gray-700" />
             <span className="text-gray-700 font-medium">Favourite</span>
           </div>
 
           <Link
             to="/login"
-            className="mt-4 w-full bg-[#5c375a] text-white py-2 rounded-full"
+            className="mt-6 w-full bg-[#5c375a] text-white py-2 px-5 rounded-full"
           >
             Login Now
           </Link>

@@ -59,7 +59,7 @@ const RevenueStreamsSection = () => {
         </div>
       </div>
 
-      <div className="mt-16 max-w-[1400px] mx-auto px-6 rounded-4xl rounded-l-[555px] p-10  bg-linear-to-r from-[#470431] to-[#ac699a] flex flex-col md:flex-row items-center gap-10 pl-16">
+      {/* <div className="mt-16 max-w-[1400px] mx-auto px-6 rounded-4xl rounded-l-[555px] p-10  bg-linear-to-r from-[#470431] to-[#ac699a] flex flex-col md:flex-row items-center gap-10 pl-16">
         <div className="text-white w-full md:w-1/2">
           <h2 className="text-3xl font-bold mb-4">Courses</h2>
 
@@ -105,7 +105,66 @@ const RevenueStreamsSection = () => {
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className="mt-12 xl:mt-16 max-w-[1400px] mx-auto px-4 sm:px-6 rounded-3xl xl:rounded-4xl xl:rounded-l-[555px] p-6 sm:p-8 xl:p-10 bg-linear-to-r from-[#470431] to-[#ac699a] flex flex-col xl:flex-row items-center gap-8 xl:gap-10 xl:pl-16">
+
+  {/* Text Section */}
+  <div className="text-white w-full xl:w-1/2 text-center xl:text-left">
+    <h2 className="text-2xl sm:text-3xl font-bold mb-4">Courses</h2>
+
+    <p className="text-sm mb-4">
+      Turn your knowledge into structured, sellable products.
+    </p>
+
+    <p className="text-sm mb-4">
+      Build online, drip, academic, or challenge-based courses with
+      built-in tools for gamification, accountability, and engagement.
+    </p>
+
+    <p className="text-sm mb-6">
+      Every course is optimized to deliver value and generate recurring
+      income.
+    </p>
+
+    <button className="bg-black text-white px-5 py-2 rounded-full font-semibold">
+      Learn More
+    </button>
+  </div>
+
+  {/* Image Section */}
+  <div className="relative w-full xl:w-1/2">
+    <div className="rounded-3xl overflow-hidden">
+      <img
+        src="https://flint-international.com/wp-content/uploads/2022/08/How-to-Identify-an-Exceptional-Instructor_2-1024x683.jpg"
+        alt="demo"
+        className="w-full object-cover h-96 xl:h-auto rounded-3xl xl:rounded-4xl xl:rounded-l-[555px]"
+      />
+    </div>
+
+    {/* Subscribe Button Card */}
+    <div className="absolute bottom-24 sm:bottom-32 right-4 sm:right-10 xl:right-16 bg-white px-3 sm:px-4 py-2 sm:py-3 rounded-xl shadow-xl flex items-center gap-3 z-20">
+      <button className="bg-[#1973ff] text-white px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold">
+        Subscribe for $5.00/mo
+      </button>
+    </div>
+
+    {/* Info Card */}
+    <div className="absolute bottom-10 sm:bottom-20 right-3 sm:right-8 xl:right-12 bg-white px-3 sm:px-4 py-2 sm:py-3 rounded-xl shadow-lg flex items-center gap-3 z-10">
+      <div className="bg-blue-100 text-blue-600 text-[10px] sm:text-xs font-bold px-2 py-1 rounded">
+        PT 01
       </div>
+      <div>
+        <p className="font-medium text-xs sm:text-sm">Lady Dentaa Amoateng MBE</p>
+        <p className="text-[10px] sm:text-xs text-gray-500">
+          54 min • Oct 17, 2026
+        </p>
+        <div className="w-24 h-2 bg-linear-to-r from-white to-blue-400 rounded-full"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
     );
 };

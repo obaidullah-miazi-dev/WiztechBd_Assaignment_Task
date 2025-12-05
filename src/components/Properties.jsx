@@ -21,7 +21,7 @@ const Properties = ({ properties }) => {
       </div>
 
       {/* Pagination is here */}
-      <div className="flex justify-center items-center gap-3 mt-12">
+      <div className="flex justify-center items-center gap-3 mt-12 overflow-x-auto">
         <button className="px-4 py-2 border rounded-lg hover:bg-gray-100">&lt; Previous</button>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
           <button

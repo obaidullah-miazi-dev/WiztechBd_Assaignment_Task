@@ -3,7 +3,7 @@ import { FaApple } from "react-icons/fa";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useState } from "react";
 import loginPageImg from "../assets/loginPageImg.png";
-import logo from "../assets/logo.png";
+import logo from "../assets/Logo.png";
 
 const Login = () => {
   const [showPass, setShowPass] = useState(false);
