@@ -3,6 +3,7 @@ import { useState } from "react";
 import SidebarFilters from "../components/SidebarFilters";
 import properties from "../data/properties.json";
 import Properties from "../components/Properties";
+import HeroSection from "../components/HeroSection";
 
 const Home = () => {
   const [filteredProperties] = useState(properties);
@@ -21,6 +22,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <HeroSection />
     </div>
   );
 };
