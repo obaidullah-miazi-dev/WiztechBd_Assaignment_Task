@@ -5,6 +5,7 @@ import properties from "../data/properties.json";
 import Properties from "../components/Properties";
 import HeroSection from "../components/HeroSection";
 import TrustedBySection from "../components/TrustedBySection";
+import RevenueStreamsSection from "../components/RevenueStreamsSection";
 
 const Home = () => {
   const [filteredProperties] = useState(properties);
@@ -26,6 +27,7 @@ const Home = () => {
 
       <HeroSection />
       <TrustedBySection />
+      <RevenueStreamsSection />
     </div>
   );
 };
