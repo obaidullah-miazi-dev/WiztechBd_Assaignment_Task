@@ -39,6 +39,11 @@ const HeroSection = () => {
           and a built-in sales network.
         </p>
 
+
+        {/* animated elipse */}
+        <div className="w-96 h-96 bg-[#ecd6c570] rounded-full blur-3xl absolute top-66 right-56 animate-[floatSlow_8s_ease-in-out_infinite]"></div>
+        <div className="w-96 h-96 bg-[#ecd6c55b] rounded-full blur-3xl absolute top-66 left-56 animate-[floatSlowReverse_10s_ease-in-out_infinite]"></div>
+
         {/* Email CTA */}
         <div className="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center">
           <div className="flex w-full max-w-2xl bg-white/10 backdrop-blur-xl border border-white/20 rounded-full overflow-hidden shadow-2xl">

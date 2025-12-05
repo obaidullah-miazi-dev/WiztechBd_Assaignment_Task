@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#2D1328] text-white relative overflow-hidden rounded-t-4xl">
+    <footer className="bg-linear-to-b from-[#251621] to-[#42233A] text-white relative overflow-hidden rounded-t-4xl">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-6 py-16 pb-66">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-sm">
@@ -61,7 +61,7 @@ const Footer = () => {
       </div>
 
       
-      <div className="absolute bottom-0 left-0 right-0 mx-auto text-center pb-8 pointer-events-none">
+      <div className="absolute bottom-0 left-0 right-0 mx-auto text-center pb-2 pointer-events-none">
         <img src={footerLogo} alt="logo" className="mx-auto"/>
       </div>
     </footer>
