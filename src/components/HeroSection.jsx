@@ -1,4 +1,5 @@
 import React from "react";
+import StatsSection from "./StatsSection";
 
 const HeroSection = () => {
   return (
@@ -57,6 +58,9 @@ const HeroSection = () => {
           By proceeding you agree to our Platform Terms & Privacy Notice
         </p>
       </div>
+
+
+      <StatsSection />
     </div>
   );
 };
