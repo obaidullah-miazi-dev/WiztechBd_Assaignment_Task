@@ -3,7 +3,6 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { HiOutlineMenu } from "react-icons/hi";
 import { HiX } from "react-icons/hi";
 import logo from "../assets/Logo.png";
-import Container from "./Container";
 import { Link } from "react-router";
 
 const Navbar = () => {
@@ -14,7 +13,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4 px-4">
           {/* Logo  */}
           <div className="flex items-center gap-2">
-            <img src={logo} alt="home" className="w-full h-8" />
+            <Link to='/'><img src={logo} alt="home" className="w-full h-8" /></Link>
           </div>
 
           {/*  Menu-bar */}

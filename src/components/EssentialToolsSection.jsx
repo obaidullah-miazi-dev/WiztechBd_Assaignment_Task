@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import tool1 from '../assets/tools/tool1.png'
 import tool2 from '../assets/tools/tool2.png'
 import tool3 from '../assets/tools/tool3.png'
@@ -42,31 +43,82 @@ const EssentialToolsSection = () => {
     },
   ];
 
+
+  // Stagger container for children
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.3,
+      }
+    }
+  };
+
+  // Individual card animation
+  const item = {
+    hidden: { 
+      y: 80, 
+      opacity: 0 
+    },
+    show: { 
+      y: 0, 
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 80,
+        damping: 20
+      }
+    }
+  };
+
   return (
     <section className="py-20 bg-linear-to-b from-amber-50 to-orange-50">
       <div className="max-w-11/12 mx-auto px-6 text-center">
         {/* Badge */}
-        <div className="inline-block px-6 py-2 bg-linear-to-r from-[#BCB3A0] to-[#E0D8C9] text-xs font-bold tracking-widest rounded-full mb-6">
+        <motion.div 
+        initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.6 }}
+        className="inline-block px-6 py-2 bg-linear-to-r from-[#BCB3A0] to-[#E0D8C9] text-xs font-bold tracking-widest rounded-full mb-6">
           ESSENTIAL TOOLS
-        </div>
+        </motion.div>
 
         {/* Headline */}
-        <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+        <motion.h2 
+        initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.8 }}
+        className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
           Essential Tools
           <br />
           Zero Distractions
-        </h2>
+        </motion.h2>
 
-        <p className="mt-6 text-lg text-gray-700 max-w-3xl mx-auto">
+        <motion.p 
+         initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.8 }}
+        className="mt-6 text-lg text-gray-700 max-w-3xl mx-auto">
           Create diverse products on the platform and leverage our powerful
           tools to drive sales within and beyond GrowHubs.
-        </p>
+        </motion.p>
 
         {/* Tools Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <motion.div 
+        variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, margin: "-100px" }}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
           {tools.map((tool, i) => (
-            <div
+            <motion.div
               key={i}
+              variants={item}
               className="bg-white/80 backdrop-blur-md rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-amber-100"
             >
               <div className="flex flex-row-reverse justify-between items-center">
@@ -88,11 +140,13 @@ const EssentialToolsSection = () => {
               <button className="mt-6 text-amber-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                 Learn more <span className="text-xl">→</span>
               </button>
-            </div>
+            </motion.div>
           ))}
 
           {/* Special Co-sell Network Card */}
-          <div className="bg-white/80 backdrop-blur-md rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-amber-100 ">
+          <motion.div 
+          variants={item}
+          className="bg-white/80 backdrop-blur-md rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-amber-100 ">
             <div className="flex flex-row-reverse justify-between items-center">
               <div
                 className={`w-16 h-16 bg-linear-to-br rounded-2xl  mb-6 flex items-center justify-center`}
@@ -113,10 +167,12 @@ const EssentialToolsSection = () => {
             <button className="mt-6 text-amber-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
               Learn more <span className="text-xl ">→</span>
             </button>
-          </div>
+          </motion.div>
 
           {/* Enterprise Plan Card */}
-          <div className="lg:col-span-2 bg-linear-to-r from-purple-900 via-pink-800 to-rose-900 rounded-3xl p-10 shadow-2xl text-white overflow-hidden relative">
+          <motion.div 
+          variants={item}
+          className="lg:col-span-2 bg-linear-to-r from-[#4D5D69] to-[#A16A6B] rounded-3xl p-10 shadow-2xl text-white overflow-hidden relative">
             <div className="flex items-center justify-between">
               <div>
                 <div className="flex justify-between items-center">
@@ -133,7 +189,6 @@ const EssentialToolsSection = () => {
                     <img
                       src={tool8}
                       alt="Enterprise"
-                      className="opacity-40"
                     />
                   </div>
                 </div>
@@ -148,8 +203,8 @@ const EssentialToolsSection = () => {
                 </button>
               </div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
