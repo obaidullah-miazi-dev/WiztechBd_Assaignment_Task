@@ -1,6 +1,11 @@
+
+import { useState } from "react";
 import SidebarFilters from "../components/SidebarFilters";
+import properties from "../data/properties.json";
+import Properties from "../components/Properties";
 
 const Home = () => {
+  const [filteredProperties] = useState(properties);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -10,7 +15,9 @@ const Home = () => {
             <aside className="lg:sticky lg:top-24 h-fit">
               <SidebarFilters />
             </aside>
-
+            <main className="flex-1">
+              <Properties properties={filteredProperties} />
+            </main>
           </div>
         </div>
       </div>
