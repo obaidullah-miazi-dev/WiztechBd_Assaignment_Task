@@ -4,12 +4,13 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { HiX } from "react-icons/hi";
 import logo from "../assets/Logo.png";
 import Container from "./Container";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <Container>
-      <nav className="w-full bg-white">
+    <nav className="bg-white sticky top-0 z-50">
+      <nav className="   w-11/12 mx-auto top-0">
         <div className="flex items-center justify-between py-4 px-4">
           {/* Logo  */}
           <div className="flex items-center gap-2">
@@ -34,9 +35,12 @@ const Navbar = () => {
               <span className="text-gray-700 font-medium">Favourite</span>
             </div>
 
-            <button className="bg-[#5c375a] text-white px-5 py-2 rounded-full hover:bg-[#492c47] transition">
+            <Link
+              to="/login"
+              className="bg-[#5c375a] text-white px-5 py-2 rounded-full hover:bg-[#492c47] transition"
+            >
               Login Now
-            </button>
+            </Link>
           </div>
 
           <div
@@ -70,12 +74,15 @@ const Navbar = () => {
             <span className="text-gray-700 font-medium">Favourite</span>
           </div>
 
-          <button className="mt-4 w-full bg-[#5c375a] text-white py-2 rounded-full">
+          <Link
+            to="/login"
+            className="mt-4 w-full bg-[#5c375a] text-white py-2 rounded-full"
+          >
             Login Now
-          </button>
+          </Link>
         </div>
       </nav>
-    </Container>
+    </nav>
   );
 };
 
