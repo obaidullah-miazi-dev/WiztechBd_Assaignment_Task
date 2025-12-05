@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "Maple Grove Garden House",
+    "price_per_week": 280,
+    "location": "New York, USA",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "area_sqft": 2500,
+    "images": [
+      "https://example.com/maple-1.jpg",
+      "https://example.com/maple-2.jpg",
+      "https://example.com/maple-3.jpg",
+      "https://example.com/maple-4.jpg",
+      "https://example.com/maple-5.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Sunset Towers Eklosbet",
+    "price_per_week": 340,
+    "location": "New York, USA",
+    "bedrooms": 7,
+    "bathrooms": 4,
+    "area_sqft": 6500,
+    "images": [
+      "https://example.com/sunset-1.jpg",
+      "https://example.com/sunset-2.jpg",
+      "https://example.com/sunset-3.jpg",
+      "https://example.com/sunset-4.jpg",
+      "https://example.com/sunset-5.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Riverside Retreat",
+    "price_per_week": 280,
+    "location": "New York, USA",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "area_sqft": 3500,
+    "images": [
+      "https://example.com/river-1.jpg",
+      "https://example.com/river-2.jpg",
+      "https://example.com/river-3.jpg",
+      "https://example.com/river-4.jpg",
+      "https://example.com/river-5.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Golden Meadows",
+    "price_per_week": 280,
+    "location": "New York, USA",
+    "bedrooms": 6,
+    "bathrooms": 4,
+    "area_sqft": 4500,
+    "images": [
+      "https://example.com/golden-1.jpg",
+      "https://example.com/golden-2.jpg",
+      "https://example.com/golden-3.jpg",
+      "https://example.com/golden-4.jpg",
+      "https://example.com/golden-5.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Ocean Sea Breeze",
+    "price_per_week": 280,
+    "location": "New York, USA",
+    "bedrooms": 8,
+    "bathrooms": 5,
+    "area_sqft": 9500,
+    "images": [
+      "https://example.com/ocean-1.jpg",
+      "https://example.com/ocean-2.jpg",
+      "https://example.com/ocean-3.jpg",
+      "https://example.com/ocean-4.jpg",
+      "https://example.com/ocean-5.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "The Urban Nest Lofts",
+    "price_per_week": 280,
+    "location": "New York, USA",
+    "bedrooms": 6,
+    "bathrooms": 4,
+    "area_sqft": 5500,
+    "images": [
+      "https://example.com/urban-1.jpg",
+      "https://example.com/urban-2.jpg",
+      "https://example.com/urban-3.jpg",
+      "https://example.com/urban-4.jpg",
+      "https://example.com/urban-5.jpg"
+    ]
+  }
+]
